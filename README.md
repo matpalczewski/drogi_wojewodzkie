@@ -16,6 +16,6 @@ Skrypty w tym repozytorium służą do wygenerowania warstwy liniowej z pliku CS
 
 Plik CSV będzie aktualizowany w związku z pojawianiem się nowych miast w Polsce 1 stycznia każdego roku. W celu przyspieszenia działania skryptów kod jest dostosowany do obecnej sytuacji, w której co najwyżej dwa polskie miasta mogą nosić taką samą nazwę - będzie tak co najmniej do końca 2024 r. (jeśli sytuacja się zmieni, zostaną wprowadzone drobne zmiany w kodzie).
 
-## Autor
+## Autor repozytorium
 
 Mateusz Palczewski
