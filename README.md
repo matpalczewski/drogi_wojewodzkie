@@ -4,7 +4,7 @@
 - ***drogi_kom.py*** - skrypt będący kopią ww. skryptu, opatrzony komentarzami
 - ***drogi.pyt*** - skrypt (Python Toolbox) do uruchomienia w oprogramowaniu ArcGIS
 - ***drogi_kom.pyt*** - skrypt będący kopią ww. skryptu, opatrzony komentarzami
-- ***wykaz_drog.csv*** - parametr dla wspomnianych wyżej skryptów
+- ***wykaz_drog.csv*** - parametr dla ww. skryptów
 
 # Opis
 
