@@ -1,4 +1,4 @@
-# © 2023 Mateusz Palczewski
+# © 2023 Mateusz Palczewski <matpalczewski@gmail.com>
 
 #Skrypt przetestowany w oprogramowaniu QGIS 3.28
 
