@@ -1,3 +1,5 @@
+# © 2023 Mateusz Palczewski
+
 import arcpy, fiona, os, overpy, pyproj, tempfile
 import pandas as pd
 from fiona.crs import from_epsg
