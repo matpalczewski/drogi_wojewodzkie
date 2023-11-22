@@ -1,3 +1,5 @@
+# © 2023 Mateusz Palczewski
+
 #Narzędzie przetestowane w oprogramowaniu ArcMap 10.8
 
 import arcpy, fiona, os, overpy, pyproj, tempfile
