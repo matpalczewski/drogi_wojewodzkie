@@ -1,3 +1,5 @@
+# © 2023 Mateusz Palczewski
+
 #Skrypt przetestowany w oprogramowaniu QGIS 3.28
 
 from qgis.PyQt.QtCore import (QCoreApplication, QVariant)
