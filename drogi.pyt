@@ -1,4 +1,4 @@
-# © 2023 Mateusz Palczewski
+# © 2023 Mateusz Palczewski <matpalczewski@gmail.com>
 
 import arcpy, fiona, os, overpy, pyproj, tempfile
 import pandas as pd
