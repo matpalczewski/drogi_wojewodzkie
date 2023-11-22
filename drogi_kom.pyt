@@ -1,4 +1,4 @@
-# © 2023 Mateusz Palczewski
+# © 2023 Mateusz Palczewski <matpalczewski@gmail.com>
 
 #Narzędzie przetestowane w oprogramowaniu ArcMap 10.8
 
