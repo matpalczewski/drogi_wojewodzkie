@@ -1,4 +1,4 @@
-# © 2023 Mateusz Palczewski
+# © 2023 Mateusz Palczewski <matpalczewski@gmail.com>
 
 from qgis.PyQt.QtCore import (QCoreApplication, QVariant)
 from qgis.core import (QgsProcessingAlgorithm,
