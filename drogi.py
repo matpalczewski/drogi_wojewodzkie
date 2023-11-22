@@ -1,3 +1,5 @@
+# © 2023 Mateusz Palczewski
+
 from qgis.PyQt.QtCore import (QCoreApplication, QVariant)
 from qgis.core import (QgsProcessingAlgorithm,
                        QgsProcessingParameterFile,
