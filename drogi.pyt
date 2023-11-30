@@ -63,7 +63,7 @@ class Drogi(object):
         drogi_csv = pd.read_csv(plik_csv)
         drogi_csv = drogi_csv.fillna('brak')
         
-        for a in range(0, len(drogi_csv)):
+        for a in range(len(drogi_csv)):
             nr = int(drogi_csv.get_value(a, 0, takeable=True))
             przebieg = ''
             vertices = []
@@ -80,7 +80,7 @@ class Drogi(object):
                             nr *= 10
             if nr > 1000:
                 nr /= 10
-                for d in range(0, len(vertices)-1):
+                for d in range(len(vertices)-1):
                     p = arcpy.PointGeometry(vertices[d], sr)
                     p1 = arcpy.PointGeometry(vertices[d+1], sr)
                     k, odl = p.angleAndDistanceTo(p1)
