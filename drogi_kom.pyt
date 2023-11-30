@@ -65,7 +65,7 @@ class Drogi(object):
         drogi_csv = pd.read_csv(plik_csv) #utworzenie tabeli w której wiersz reprezentuje jedną drogę, pierwsza komórka w wierszu zawiera numer drogi, a pozostałe komórki zawierają nazwy miast na drodze (jedno miasto w jednej komórce), liczba kolumn jest równa liczbie komórek w wierszu reprezentującym drogę z największą liczbą miast
         drogi_csv = drogi_csv.fillna('brak') #zastąpienie wartości NaN w pustych komórkach wartością do której łatwiej się odnieść w dalszej części kodu (drogi nie mają jednakowej liczby miast w swoim przebiegu stąd puste komórki
         
-        for a in range(0, len(drogi_csv)): #a oznacza jedną drogę (tyle iteracji ile dróg)
+        for a in range(len(drogi_csv)): #a oznacza jedną drogę (tyle iteracji ile dróg)
             nr = int(drogi_csv.get_value(a, 0, takeable=True))
             przebieg = '' #zmienna do tworzenia opisów przebiegu dróg
             vertices = [] #tablica przechowująca punkty tworzące linię (drogę)
@@ -82,7 +82,7 @@ class Drogi(object):
                             nr *= 10 #tymczasowe pomnożenie numeru drogi, wyróżnienie dróg łączących miasta o tej samej nazwie (obecnie nie ma drogi wojewódzkiej w Polsce łączącej miasta o tej samej nazwie)
             if nr > 1000: #część kodu wykonywana dla dróg o zbyt dużej liczbie miast (dla dróg o pomnożonym numerze)
                 nr /= 10
-                for d in range(0, len(vertices)-1): #iteracje po segmentach linii (odcinkach drogi między dwoma kolejnymi miastami), d oznacza indeks punktu (miasta) będącego punktem początkowym segmentu
+                for d in range(len(vertices)-1): #iteracje po segmentach linii (odcinkach drogi między dwoma kolejnymi miastami), d oznacza indeks punktu (miasta) będącego punktem początkowym segmentu
                     p = arcpy.PointGeometry(vertices[d], sr)
                     p1 = arcpy.PointGeometry(vertices[d+1], sr)
                     k, odl = p.angleAndDistanceTo(p1)
