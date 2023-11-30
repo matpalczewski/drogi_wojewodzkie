@@ -85,7 +85,7 @@ class Drogi(QgsProcessingAlgorithm):
         drogi_csv = drogi_csv.fillna('brak')
         miasta = QgsVectorLayer(tempf)
         
-        for a in range(0, len(drogi_csv)):
+        for a in range(len(drogi_csv)):
             nr = int(drogi_csv._get_value(a, 0, takeable=True))
             przebieg = ''
             vertices = []
@@ -102,7 +102,7 @@ class Drogi(QgsProcessingAlgorithm):
                             nr *= 10
             if nr > 1000:
                 nr /= 10
-                for d in range(0, len(vertices)-1):
+                for d in range(len(vertices)-1):
                     p = QgsPoint(vertices[d])
                     p1 = QgsPoint(vertices[d+1])
                     odl = p.distance(p1)
