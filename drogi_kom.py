@@ -83,7 +83,7 @@ class Drogi(QgsProcessingAlgorithm):
                 prop = {'name': n.tags.get("name")}
                 f.write({'geometry': punkt, 'properties': prop})
         
-        drogi_csv = pd.read_csv(plik_csv, encoding='windows-1250') #utworzenie tabeli w której wiersz reprezentuje jedną drogę, pierwsza komórka w wierszu zawiera numer drogi, a pozostałe komórki zawierają nazwy miast na drodze (jedno miasto w jednej komórce), liczba kolumn jest równa liczbie komórek w wierszu reprezentującym drogę z największą liczbą miast
+        drogi_csv = pd.read_csv(plik_csv) #utworzenie tabeli w której wiersz reprezentuje jedną drogę, pierwsza komórka w wierszu zawiera numer drogi, a pozostałe komórki zawierają nazwy miast na drodze (jedno miasto w jednej komórce), liczba kolumn jest równa liczbie komórek w wierszu reprezentującym drogę z największą liczbą miast
         drogi_csv = drogi_csv.fillna('brak') #zastąpienie wartości NaN w pustych komórkach wartością do której łatwiej się odnieść w dalszej części kodu (drogi nie mają jednakowej liczby miast w swoim przebiegu stąd puste komórki
         miasta = QgsVectorLayer(tempf)
         
