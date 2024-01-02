@@ -81,7 +81,7 @@ class Drogi(QgsProcessingAlgorithm):
                 prop = {'name': n.tags.get("name")}
                 f.write({'geometry': punkt, 'properties': prop})
         
-        drogi_csv = pd.read_csv(plik_csv, encoding='windows-1250')
+        drogi_csv = pd.read_csv(plik_csv)
         drogi_csv = drogi_csv.fillna('brak')
         miasta = QgsVectorLayer(tempf)
         
